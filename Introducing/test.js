@@ -77,16 +77,41 @@
 // }
 // kendaraan()
 
-var a = 'IDN'
-const b = 'Boarding'
+// var a = 'IDN'
+// const b = 'Boarding'
 
-function satu() {
-    let c = 'School'
-    console.log(a)
-    if (true) {
-        console.log(b)
+// function satu() {
+//     let c = 'School'
+//     console.log(a)
+//     if (true) {
+//         console.log(b)
+//     }
+//     console.log(c)
+    
+// }
+// satu()
+
+//!closure
+/**
+ * closure adalah cara mengakses variable dari parent scope di dalam child scope parent
+ */
+
+// function hello(sapa) {
+//     var text = 'assalamualaikum' + sapa
+//     return function() {
+//         console.log(text)
+//     }
+// }
+// var nama = hello(" Genta")
+
+// nama()
+
+function Hallo(kelas) {
+    var test = 'Genta Halilintar' + kelas
+    return function() {
+        console.log(test)
     }
-    console.log(c)
     
 }
-satu()
+var nama = Hallo('\n 10 RPL A'  )
+nama()
