@@ -106,12 +106,12 @@
 
 // nama()
 
-function Hallo(kelas) {
-    var test = 'Genta Halilintar' + kelas
+function Hallo(nama,kelas) {
+    var test = 'nama =' + nama +'\nkelas =' + kelas
     return function() {
         console.log(test)
     }
     
 }
-var nama = Hallo('\n 10 RPL A'  )
+var nama = Hallo(' Genta Halilintar', ' 10 RPl A'  )
 nama()
