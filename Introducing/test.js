@@ -106,12 +106,135 @@
 
 // nama()
 
-function Hallo(nama,kelas) {
-    var test = 'nama =' + nama +'\nkelas =' + kelas
-    return function() {
-        console.log(test)
-    }
+// function Hallo(nama,kelas) {
+//     var test = 'nama =' + nama +'\nkelas =' + kelas
+//     return function() {
+//         console.log(test)
+//     }
     
+// }
+// var nama = Hallo(' Genta Halilintar', ' 10 RPl A'  )
+// nama()
+
+//!Tipe data pada js
+/**
+ * tipe data adalah karakteristik dari nilai sebuah data di js terdapat
+ * 7
+ * null,undifined,boolean,number,bigInt,String,symbol(es6)
+ * dan tipe data kompleks object.
+ * loosely typed yaitu variable tidak menentukan sebuah tipe data,melainkan nilai yang menentukan tipe data tersebut
+ */
+//!contoh 
+// var a = 'genta'
+// var b = 1
+// var c = true
+
+// var d
+// console.log(typeof d)
+
+//!Tipe data undifined
+/**
+ * tipe data yang nilainya kosong atau tidak di definisikan
+ */
+// let a 
+// function genta(params) {
+//     a = 'ini function genta'
+//     console.log(a)
+// }
+
+// function lintar(params) {
+//     a = 'ini function lintar'
+//     console.log(a)
+// }
+// lintar()
+// genta()
+//!Tipe data null
+/**
+ * tipe data primitif yang nilainya kosong atau null
+ */
+// let a = {}
+// console.log(typeof a)
+
+//!Number
+/**
+ * Rentang nilai yang bisa di tampung oleh tipe data number yakni antara (2^53 1)
+ * dan 2^53 1 atau 9007199254740991 sampai 9007199254740991 jika sebuah number
+ * memiliki nilai lebioh dari rentang ini,maka sebaiknya menggunakan tipe data BigInt
+ */
+
+//!NaN atau Not a Number
+// let a = 17
+// if (a >= 17){
+//     a = 'Anda belum cukup umur'
+//     console.log(a/2)
+// }else{
+//     a = 'sudah cukup'
+//     console.log(a)
+// }
+
+//!String
+/**
+ * String merupakan tipe data yang menampung karakter.symbol '',"",``
+ */
+//menghitung jumlah
+// let a = 'genta'
+// console.log(a.length)
+
+//!loop
+// let kata = 'helloworld'
+// for (let i = 0; i < kata.length; i++){
+//     console.log(kata[i])
+// }
+/**
+ * boolean
+ */
+
+// let belajar = false
+// if(belajar){
+//     console.log('Kelas ini sedang belajar')
+// }
+
+//!Object
+/**
+ * object ini merupakan tipe data komplek yang berisi props
+ */
+
+// let identitas = {
+//     firstName : 'Genta',
+//     lastName : 'Halilintar',
+//     email : 'genta@gmail.com',
+//     instagram : 'genta',
+//     linkedin : 'lintar',
+//     phone : 'Iphone',
+//     address : {//nest
+//         city : 'bekasi',
+//         number : 8,
+//         street : 'jalan sini'
+//     }
+// }
+//cara memanggil  object
+
+// console.log('Nama saya : '+ identitas.firstName)
+// console.log('Rumah saya di :' + identitas.bekasi.street)
+
+//menggunakan array
+// console.log(identitas['firstName'])
+// console.log(identitas['address']['number'])
+
+// console.table(identitas)
+
+let koleksi = {
+    jalan : 'jalan berkah',
+    kota : 'bekasi',
+    platNomor : 'jabodetabek',
+    kendaraan : {
+        mobil : 'peugeot',
+        motor : 'v-xion',
+        sepeda : 'untided'
+    },
+    kereta : {
+        namaKa : 'Argo bromo anggrek',
+        tujuan : 'senen pasar turi',
+    }
 }
-var nama = Hallo(' Genta Halilintar', ' 10 RPl A'  )
-nama()
+console.table(koleksi)
