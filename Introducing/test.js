@@ -224,14 +224,14 @@
 // console.table(identitas)
 
 let koleksi = {
-    jalan : 'jalan berkah',
-    kota : 'bekasi',
-    platNomor : 'jabodetabek',
     kendaraan : {
         mobil : 'peugeot',
         motor : 'v-xion',
         sepeda : 'untided'
     },
+    jalan : 'jalan berkah',
+    kota : 'bekasi',
+    platNomor : 'jabodetabek',
     kereta : {
         namaKa : 'Argo bromo anggrek',
         tujuan : 'senen pasar turi',
