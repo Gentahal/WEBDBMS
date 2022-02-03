@@ -223,18 +223,154 @@
 
 // console.table(identitas)
 
-let koleksi = {
-    kendaraan : {
-        mobil : 'peugeot',
-        motor : 'v-xion',
-        sepeda : 'untided'
-    },
-    jalan : 'jalan berkah',
-    kota : 'bekasi',
-    platNomor : 'jabodetabek',
-    kereta : {
-        namaKa : 'Argo bromo anggrek',
-        tujuan : 'senen pasar turi',
-    }
+// let koleksi = {
+//     kendaraan : {
+//         mobil : 'peugeot',
+//         motor : 'v-xion',
+//         sepeda : 'untided'
+//     },
+//     jalan : 'jalan berkah',
+//     kota : 'bekasi',
+//     platNomor : 'jabodetabek',
+//     kereta : {
+//         namaKa : 'Argo bromo anggrek',
+//         tujuan : 'senen pasar turi',
+//     }
+// }
+// console.table(koleksi)
+
+//!template literal
+// const mobil = 'peugot'
+// const motor = 'panigale'
+
+// console.log(`mobil saya adalah ${mobil} dan motor saya ${motor}`)//harus ada kode backtis
+
+// let a = 1,b = 2,c = 3
+
+// let[a,b,c] = [3,4,5]
+// console.log(a) //!loosely typed
+
+//!ternarary operator
+// let a = 10
+ // if(a<10){
+//     console.log('Nilai A kurang dari 10')
+// }else{
+//     console.log('Nilai A lebih dari 10')
+// }
+
+// a<10 //ini menggunakan ternarary operator
+// ? console.log('nila A kurang dari 10')
+// : console.log('nilai A lebih dari 10')
+
+//!Function
+/**Merupakan sebuah blok kode untuk membungkus sebuah proses penulisan kode agar tidak diulang */
+
+//!Ini fun biasa
+// function name(params,acs) {
+//     console.log(params,acs)
+// }
+// name("Ini Genta", "In genta")
+// //!Anonymous fun
+
+// const anon = function(genta) {
+//     console.log(genta)
+// }
+
+// anon("Kita Belaja Js")
+
+//!Arrow fun
+
+// let robot = () => { //parameternya boleh di isi ato engga
+//     console.log('Dias Adalah Robot')
+// }
+
+// robot()
+
+// const satu = (param) => {
+//     let a = param
+//     console.log(a)
+// }
+// satu("Ini Fun")
+
+// const dua = function(params1, params2) {
+//     let a = params1, b =params2
+//     console.log(a+b)
+// }
+// dua(1,1)
+
+//!High Order function
+/**
+ * fungsi yang menerima argumen berupa fungsi lain serta return bisa berupa fungsi juga
+ */
+//!normal fun
+
+// function genap(number) {
+//     return number %2 == 0
+// }
+
+// function print(number) {
+//     let isTrue = genap(number)
+//     if (isTrue) {
+//         console.log(`${number} adalah bilangan genap`)
+//     }else[
+//         console.log(`${number} adalah bilangan ganjil`)
+
+//     ]
+// }
+
+// print(10)
+
+//!High Order Fun
+
+// function ganjil(nomor) {
+//     return nomor %2 == 0
+// }
+
+// function print(nomor,nomor1) {
+//     let isTrue = nomor1(nomor)
+//     if (isTrue) {
+//         console.log(`${nomor} adalah Domba tersesat`)
+//     }else[
+//         console.log(`${nomor} adalah Domba lurus`)
+//     ]
+// }
+
+// print(2,ganjil)
+
+// function genta(nilai) {
+//     return nilai  >= 100
+// }
+
+// function abdi(nilai) {
+//     return nilai == 'kuning'
+// }
+
+// function gue(satu,dua) {
+//     const isTrue = dua(satu)
+//     if (isTrue) {
+//         console.log(`${satu} adalah genta`)
+//     }else[
+//         console.log(`${satu} bukan genta`)
+//     ]
+// }
+
+// gue(abdi,genta)
+
+function tahun(motor) {
+    return motor <= 2001
 }
-console.table(koleksi)
+
+function cc(motor) {
+    return motor >= 150
+}
+
+function kendaraan(satu,dua) {
+    const a = dua(satu)
+    if (a) {
+        console.log(`${satu} gaperlu bayar pajak`)
+    }else[
+        console.log(`${satu} harus bayar pajak`)
+    ]
+}
+
+kendaraan(2002,tahun)
