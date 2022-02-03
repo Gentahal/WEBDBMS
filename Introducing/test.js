@@ -357,7 +357,7 @@
 // gue(abdi,genta)
 
 function tahun(motor) {
-    return motor >= 2001
+    return motor <= 2001
 }
 
 function cc(motor) {
