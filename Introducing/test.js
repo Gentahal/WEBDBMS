@@ -361,11 +361,11 @@ function tahun(motor) {
 }
 
 function cc(motor) {
-    return motor >= 150
+    return motor >= 500
 }
 
 function kendaraan(motor,dua) {
-    const a = dua(motor)
+    const a = motor(dua)
     if (a) {
         console.log(`${motor} gaperlu bayar pajak`)
     }else[
