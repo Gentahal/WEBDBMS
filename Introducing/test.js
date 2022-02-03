@@ -364,12 +364,12 @@ function cc(motor) {
     return motor >= 150
 }
 
-function kendaraan(satu,motor) {
-    const a = dua(motor)
+function kendaraan(satu,dua) {
+    const a = dua(satu)
     if (a) {
-        console.log(`${motor} gaperlu bayar pajak`)
+        console.log(`${satu} gaperlu bayar pajak`)
     }else[
-        console.log(`${motor} harus bayar pajak`)
+        console.log(`${satu} harus bayar pajak`)
     ]
 }
 
