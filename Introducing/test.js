@@ -357,11 +357,11 @@
 // gue(abdi,genta)
 
 function tahun(motor) {
-    return motor <= 2001
+    return motor >= 2001
 }
 
 function cc(motor) {
-    return motor >= 500
+    return motor >= 150
 }
 
 function kendaraan(motor,dua) {
@@ -373,4 +373,4 @@ function kendaraan(motor,dua) {
     ]
 }
 
-kendaraan(120,cc)
+kendaraan(200,cc)
