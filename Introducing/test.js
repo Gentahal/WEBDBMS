@@ -365,7 +365,7 @@ function cc(motor) {
 }
 
 function kendaraan(motor,dua) {
-    const a = motor(dua)
+    const a = dua(motor)
     if (a) {
         console.log(`${motor} gaperlu bayar pajak`)
     }else[
